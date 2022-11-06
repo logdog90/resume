@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  color: rgba(0, 0, 0, .8);
+  background: url('../img/background.jfif');
+}
+
+label {
+  display: block;
+  max-width: 200px;
+}
+
+a {
+  text-decoration: none;
+  color: #0000ff;
+  transition: .3s ease-in-out;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: rgb(255, 145, 0);
+}
+
+li {
+  list-style-position: inside;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  border-left: 2px solid rgba(0, 0, 0, .1);
+  border-right: 2px solid rgba(0, 0, 0, .1);
+}
+
+@media (max-width: 800px) {
+  .container {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    border: none;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.header--bg-white,
+.content--bg-white {
+  background-color: #fff;
+}
+
+.photo {
+  max-width: 200px;
+  padding-bottom: 20px;
+}
+
+.photo__link {
+  text-decoration: none;
+}
+
+.photo__img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.main__titles {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.titles__title {
+  font-size: 32px;
+}
+
+.titles__subtitle {
+  font-size: 24px;
+}
+
+.info {
+  width: 100%;
+}
+
+.header__info {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+@media (max-width: 800px) {
+  .header__info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+.info__inner {
+  text-align: center;
+}
+
+.info__text--bold {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 30px;
+}
+
+.bg--blue {
+  background-color: #3f6592;
+}
+
+.text--white {
+  color: #fff;
+}
+
+.content__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.wrap__info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.item.info__item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  text-align: left;
+}
+
+@media (max-width: 450px) {
+  .item.info__item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 240px;
+  }
+}
+
+.info__item.wrap__item {
+  display: block;
+  text-align: center;
+}
+
+img.item__img.img {
+  max-width: 150px;
+}
+
+.item__text {
+  margin-bottom: 5px;
+}
+
+.header--bg-white,
+.content--bg-white {
+  background-color: #fff;
+}
+
+.content__info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .info.wrap__info.content__info.content__info {
+    gap: 15px;
+  }
+}
+
+.item__label {
+  flex-basis: 240px;
+}
+
+@media (max-width: 450px) {
+  .item__label {
+    flex-basis: auto;
+    text-align: center;
+  }
+
+  #progress {
+    width: 100%;
+  }
+}
+
+.main__content {
+  display: block;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 800px) {
+  .main__content {
+    padding: 40px 30px;
+    padding-bottom: 55px;
+  }
+}
+
+.content-block {
+  max-width: 600px;
+  margin: auto;
+}
+
+.content-block__inner,
+.content-block__item {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+@media (max-width: 800px) {
+  .content-block__inner,
+  .content-block__item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .info__text.info__text--bold,
+  .info__inner.info__inner--text-left {
+    text-align: center;
+  }
+}
+
+.info__inner--text-left,
+.info__item--text-left {
+  text-align: left;
+}
+
+@media (max-width: 440px) {
+  .info__inner--text-left {
+    text-align: center;
+  }
+}
+
+.info__text--italic {
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.info__text--grey {
+  color: rgba(0, 0, 0, .5);
+}
+
+.content-block__inner,
+.content-block__item {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+@media (max-width: 800px) {
+  .info.content__info {
+    gap: 0;
+  }
+}
+
+.content-block__text {
+  text-align: left;
+}
+
+@media (max-width: 800px) {
+  .content-block__text {
+    text-align: center;
+  }
+}
+
+.info__list {
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+}
+
+@media (max-width: 800px) {
+  .info__list {
+    max-width: 400px;
+    margin: auto;
+  }
+}
+
+.info__link--orange {
+  color: rgb(255, 145, 0);
+}
